@@ -15,3 +15,17 @@ let {age} = user;
 
 console.log(name);
 console.log(age);
+
+//Project
+
+const users = [
+  { id: 1, name: "Iklu", role: "admin" },
+  { id: 2, name: "Banhar", role: "user" },
+  { id: 3, name: "Vikram", role: "user" }
+];
+
+let onlyUser = users.filter(user => user.role == "user");
+console.log(onlyUser);
+
+let userStr = onlyUser.map(u => `${u.name} is a user` );
+console.log(userStr);
